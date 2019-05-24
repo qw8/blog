@@ -147,3 +147,39 @@ span.tximg { display: block; float: left; margin-right: 10px; }
 .hf { padding-bottom: 20px; border-bottom: #dedddd 1px dashed; }
 textarea#lytext { width: 99%; }
 .gbox input[type="submit"] { display: block; background: #040404; color: #fff; border: 0; line-height: 30px; padding: 0 20px; border-radius: 5px; float: right; }
+/*文章*/
+.con_tilte { font-size: 22px; margin-top: 20px }
+.con_nav { float: right; font-size: 14px; color: #666 }
+.con_nav a { color: #666 }
+.con_nav a:hover { color: #000 }
+.con_info { color: #888888; border: 1px solid #F3F3F3; padding: 10px; margin: 10px auto 0; line-height: 23px; background: none repeat 0 0 #F6F6F6; }
+.con_info b { margin-right: 10px; color: #000; }
+.con_text { line-height: 24px; margin-top: 20px; }
+.con_text a { color: #09C;word-break: break-all; }
+.con_text a:hover { text-decoration: underline }
+.con_text p { margin: 15px 0; }
+.con_text img { display: block; max-width: 100% !important; height:auto !important;
+    margin: auto }
+.price_info ul { padding-top: 15px; position: relative; overflow: hidden }
+.price_info p { margin-bottom: 5px }
+.price_info img { position: absolute; right: 20px; top: 0; width: 120px }
+.share { padding: 10px 20px; background: #f7f7f7; border-left: 3px solid #000; }
+.diggit { display: block; width: 160px; margin: 20px auto; background: #E2523A; color: #fff; box-shadow: 1px 2px 6px 0px rgba(0,0,0,.2); border-radius: 3px; line-height: 40px; text-align: center; }
+.diggit a { color: #fff }
+.diggit a:hover { text-decoration: none }
+.otherlink { margin: 10px 0; overflow: hidden }
+.otherlink li { position: relative; line-height: 26px; height: 26px; display: block; width: 50%; float: left; overflow: hidden; }
+.otherlink li a { display: block; margin-right: 30px; padding-left: 10px; }
+.otherlink li a:hover { text-decoration: underline; color: #000 }
+.otherlink li:before { position: absolute; content: ""; width: 3px; height: 3px; background: #000; border-radius: 10px; left: 0px; top: 12px; }
+.nextinfo a { color: #000 }
+.ad img { width: 100% }
+.xiangsi { margin-top: 20px; overflow: hidden }
+.xiangsi li { width: 25%; float: left; overflow: hidden; margin-bottom: 20px; padding-bottom: 10px; }
+.xiangsi a { display: block; margin: 0 5px; padding-bottom: 10px; box-shadow: #ececec 0px 2px 5px; }
+.xiangsi li i { display: block; overflow: hidden; height: 120px; margin-bottom: 10px; }
+.xiangsi li i img { width: 100%; min-height: 120px; -moz-transition: all .5s ease; -webkit-transition: all .5s ease; -ms-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; transition: all 0.5s; }
+.xiangsi li i:hover img { transform: scale(1.1); }
+.xiangsi li p { font-weight: bold; margin-bottom: 10px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding: 0 8px }
+.xiangsi li span { color: #666; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display:block; -webkit-line-clamp: 3; font-size: 14px; height: 62px; padding: 0 8px }
+.whitebg { background: #fff; border-radius: 3px; padding: 20px; margin-bottom: 20px; overflow: hidden; }
