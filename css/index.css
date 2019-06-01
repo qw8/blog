@@ -320,7 +320,7 @@ a.iconfont.icon-weixin0 { color: #07AF12; }
 .diarytext h3{
     height: 26px;
     line-height: 26px;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 .diarytext>li h3 a{
     font-size: 16px;
@@ -331,7 +331,7 @@ a.iconfont.icon-weixin0 { color: #07AF12; }
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.5;
-    height: 48px;
+    height: 46px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp:2;
