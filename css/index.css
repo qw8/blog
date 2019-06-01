@@ -73,7 +73,7 @@ a{
     color: white;
 }
 .nav li a:hover{
-    color: blue;
+    color: #00c1de;
 }
 .headerbox .search{
     width: 50px;
@@ -98,6 +98,7 @@ a{
     margin-right: 20px;
     float: left;
     position: relative;
+    overflow: hidden;
 }
 .bannerleft .bannerimg{
     width: 100%;
@@ -107,8 +108,11 @@ a{
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
+    left: 620px;
     top: 0;
+}
+.bannerimg>li:first-child{
+    left: 0;
 }
 .bannerimg>li a{
     width: 100%;
@@ -122,6 +126,7 @@ a{
     top: 50%;
     margin-top: -16px;
     cursor: pointer;
+    z-index: 3;
 }
 .leftbtn{
     left: 50px;
@@ -138,6 +143,8 @@ a{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 3;
+    transition: 0.5s;
 }
 .btnlist>li{
     width: 10px;
@@ -145,7 +152,10 @@ a{
     margin-right: 14px;
     float: left;
     border-radius: 50%;
-    background: #37aece;
+    background: white;
+}
+.btnlist > .hot{
+    background: #12b7de;
 }
 .banner .bannermid{
     width: 270px;
@@ -253,7 +263,7 @@ a.iconfont.icon-weixin0 { color: #07AF12; }
 .diary .diarylist{
     border-bottom: 1px solid gray;
     overflow: hidden;
-    padding: 10px 0;
+    line-height: 2.2;
 }
 .diarylist li{
     float: left;
@@ -287,24 +297,37 @@ a.iconfont.icon-weixin0 { color: #07AF12; }
 }
 .diary .diarytext{
     width: 520px;
+    height: 100%;
     padding: 10px;
     float: right;
 }
 .diarytext li{
-    width: 100%;
     height: auto;
     padding: 0 30px 0 20px;
 }
+.diarytext .hot{
+    background: #f6f6f6;
+}
+.diarytext .hot> h3 a{
+    color: #000000;
+}
+.diarytext .hot > p{
+    display: -webkit-box;
+}
+.diarytext .hot> h3 span{
+    background: #000000;
+}
 .diarytext h3{
-    height: 30px;
-    line-height: 30px;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 6px;
 }
 .diarytext>li h3 a{
     font-size: 16px;
-    color: black;
     font-weight: bold;
 }
 .diarytext>li p{
+    padding: 5px;
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.5;
@@ -313,6 +336,7 @@ a.iconfont.icon-weixin0 { color: #07AF12; }
     -webkit-box-orient: vertical;
     -webkit-line-clamp:2;
     overflow: hidden;
+    display: none;
 }
 .diarytext>li>h3 span{
     width: 24px;
@@ -323,7 +347,7 @@ a.iconfont.icon-weixin0 { color: #07AF12; }
     font-weight: normal;
     line-height: 20px;
     color: white;
-    background: black;
+    background: gray;
 }
 /*特别推荐*/
 .mainleft .recommend{
