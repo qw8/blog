@@ -1,3 +1,38 @@
+//链接隐藏（jQuery）
+$(function(){
+    let slides = $("li:has(.slideDown)");
+    let slidesDowns = $(".slideDown");
+
+    //方式一
+    // slides.on("mouseenter",function(){
+    //     let index = $(this).index("li:has(.slideDown)");
+    //     $(slidesDowns[index]).slideDown();
+    // });
+    // slides.on("mouseleave",function(){
+    //     let index = $(this).index("li:has(.slideDown)");
+    //     $(slidesDowns[index]).slideUp();
+    // });
+
+    // slides.on("mouseenter mouseleave", function () {
+    //     let index = $(this).index("li:has(.slideDown)");
+    //     $(slidesDowns[index]).toggle("display:block");
+    // });
+
+    //方式二
+    slides.on("mouseenter",function () {
+        $(this).children(".slideDown").slideDown()
+    });
+    slides.on("mouseleave",function () {
+        $(this).children(".slideDown").slideUp()
+    });
+
+    // slides.hover(function () {
+    //     $(this).children(".slideDown").slideToggle()
+    // })
+
+});
+
+
 window.onload=function(){
 //轮播图左右按钮点击
     let current=0,next=0;
@@ -49,10 +84,10 @@ window.onload=function(){
     let t=setInterval(rightbtn.onclick,2000);
     bannerleft.onmouseenter=function(){
         clearInterval(t);
-    }
+    };
     bannerleft.onmouseleave=function(){
         t=setInterval(rightbtn.onclick,2000);
-    }
+    };
 
 //轮播图下方按钮
     let bannerpoint=document.querySelectorAll(".btnlist>li");
@@ -115,7 +150,7 @@ window.onload=function(){
     })
     window.onscroll=function () {
         let scrolltop=document.documentElement.scrollTop||document.body.scrollTop;
-        console.log(scrolltop);
+        // console.log(scrolltop);
         for (let i=0;i<positionArr.length;i++){
             if(scrolltop+viewH>=positionArr[i]+50){
                 //标准属性
@@ -125,7 +160,6 @@ window.onload=function(){
             }
         }
     }
-
 
 }
 

@@ -142,11 +142,53 @@ p.fbinfo { margin: 10px 0; }
 .fb ul { margin: 10px 0; padding: 20px 10px; border-bottom: #ececec 1px solid; }
 span.tximg { display: block; float: left; margin-right: 10px; }
 .gbox i { display: block; float: left; margin-right: 10px; }
-.gbox i input { margin: 10px auto; display: block; }
+
 .hf ul { padding: 10px 10px; background: #f9f9f9; }
 .hf { padding-bottom: 20px; border-bottom: #dedddd 1px dashed; }
 textarea#lytext { width: 99%; }
 .gbox input[type="submit"] { display: block; background: #040404; color: #fff; border: 0; line-height: 30px; padding: 0 20px; border-radius: 5px; float: right; }
+
+.gbox form > .avatar{
+    overflow: hidden;
+}
+.gbox .avatar > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+.gbox form > .avatar > .avatarHot{
+    opacity: 1;
+}
+.gbox .content{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.gbox .content span {
+    margin: 10px 0;
+    display: inline-block;
+}
+.gbox .content > textarea{
+    width: 1150px;
+    min-height: 300px;
+    resize:none;
+}
+.gbox .content > input{
+    padding: 4px 16px;
+    margin: 10px 0 0 10px;
+    box-sizing: border-box;
+    font-style: normal;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    float: right;
+    color: #ffffff;
+    background: #000000;
+}
+
 /*文章*/
 .con_tilte { font-size: 22px; margin-top: 20px }
 .con_nav { float: right; font-size: 14px; color: #666 }

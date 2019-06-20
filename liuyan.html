@@ -5,6 +5,7 @@
     <title>留言</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/blog.css">
+    <script src="./js/liuyan.js"></script>
 </head>
 <body>
 
@@ -31,47 +32,39 @@
     <div class="whitebg">
         <h2 class="title">留言</h2>
         <div class="news_infos m20">
+
             <div class="gbox">
-                <form>
-                    <p> <strong>来说点儿什么吧...</strong></p>
-                    <p><span> 您的姓名:</span>
-                        <input name="name" type="text" id="name" />
-                        *</p>
-                    <input name="email" type="hidden" id="email" value="admin@qq.com"  />
-                    <p><span>选择头像:</span> *</p>
-                    <p> <i>
-                        <input type="radio" value= "../images/tx1.jpg" style="display:none" selected>
-                        <img id="a" src="./image/tx1.jpg "></i> <i>
-                        <input type="radio" value= "../images/tx2.jpg"  style="display:none">
-                        <img id="b" src="./image/tx2.jpg" ></i> <i>
-                        <input type="radio" value= "../images/tx3.jpg"  style="display:none">
-                        <img id="c" src="./image/tx3.jpg"></i> <i>
-                        <input type="radio" value= "../images/tx4.jpg"  style="display:none">
-                        <img id="d" src="./image/tx4.jpg " ></i> <i>
-                        <input type="radio" value= "../images/tx5.jpg" style="display:none">
-                        <img id="e" src="./image/tx5.jpg" ></i> <i>
-                        <input type="radio" value= "../images/tx6.jpg"  style="display:none">
-                        <img id="f" src="./image/tx6.jpg"></i> <i>
-                        <input type="radio" value= "../images/tx7.jpg"  style="display:none">
-                        <img id="g" src="./image/tx7.jpg" ></i> <i>
-                        <input type="radio" value= "../images/tx8.jpg"  style="display:none">
-                        <img id="h" src="./image/tx8.jpg" ></i> </p>
-                    <p class="tnr">
-                        <span>留言内容:</span>
-                        <textarea name="lytext" cols="60" rows="12"></textarea>
-                    </p>
-                    <p>
-                        <input type="submit"  value="提交" />
-                        <input name="enews" type="hidden" id="enews" value="AddGbook" />
-                    </p>
+                <form id="myForm">
+                    <div>
+                        您的姓名：<input type="text" name="blogname">
+                    </div>
+                    <div>选择头像：</div>
+                    <div class="avatar">
+                        <img src="./image/tx1.jpg" alt="">
+                        <img src="./image/tx2.jpg" alt="">
+                        <img src="./image/tx3.jpg" alt="">
+                        <img src="./image/tx4.jpg" alt="">
+                        <img src="./image/tx5.jpg" alt="">
+                        <img src="./image/tx6.jpg" alt="">
+                        <img src="./image/tx7.jpg" alt="">
+                        <img src="./image/tx8.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        留言内容：<span>限制输入100字，已输入&nbsp</span><span id="count"></span><span>&nbsp字</span>
+                        <textarea></textarea>
+                        <input type="submit" value="提交" >
+                    </div>
                 </form>
             </div>
+            <div class="message">
 
+            </div>
+
+<!--            默认评论-->
             <div class="fb">
                 <ul>
                     <span class="tximg"><img src="./image/tx5.jpg"></span>
-                    <p class="fbtime"><span>
-            2019-06-01            </span> lookweb</p>
+                    <p class="fbtime"><span>2019-06-01</span> lookweb</p>
                     <p class="fbinfo">模板更新了可以给我们用吗？</p>
                 </ul>
             </div>
@@ -85,8 +78,7 @@
             <div class="fb">
                 <ul>
                     <span class="tximg"><img src="./image/tx3.jpg"></span>
-                    <p class="fbtime"><span>
-            2018-05-08            </span> dancesmile</p>
+                    <p class="fbtime"><span>2018-05-08</span> dancesmile</p>
                     <p class="fbinfo">你好！这是我第一个留言的。</p>
                 </ul>
             </div>
